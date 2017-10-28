@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Sam Slate
-subtitle: welcome to my little corner of the internet
+title: Projects & Writing
+subtitle: 
 sitemap:
   priority: 0.9
 ---
+
 
 <ul class="list-posts">
     {% for post in site.posts %}
