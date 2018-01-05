@@ -8,7 +8,7 @@ permalink: /about/
 
 I see my life as a mix of a lot of things, including:
 
-<table style="width:100%;font-size:22px" font>
+<table style="width:100%" font>
   <tr>
     <td>~ cooking</td>
     <td>~ swimming</td> 

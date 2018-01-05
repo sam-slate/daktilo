@@ -6,4 +6,4 @@ sitemap:
   priority: 0.9
 ---
 
-My name is Sam and I am a student, coder, organizer, and believer in people and our power to create change. You can check out my [bio]({{ '/about' | prepend: site.baseurl }}) and my [projects and writing]({{ '/projectsandwriting' | prepend: site.baseurl }}) on this site.
+My name is Sam and I am a student, coder, organizer, and believer in people and our power to create change. You can check out my [bio](/about) and my [projects and writing](/projectsandwriting) on this site, or you can [contact me](/contact).
