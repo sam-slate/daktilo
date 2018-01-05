@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Plot Font"
+subtitle: "Plotting a random graph with a higher density of nodes and edges based on text given by user"
+date:   2017-09-29 23:34:01
+categories: [design, tool]
+---
+
+This project a way for me to say thank you to the wonderful Proefssor [Lenore Cowen][lenore-cowen], with whom I conducted research in Computational Biology during the Summer of 2017 and beyond. The github link to the project is [here][github-link].
+
+We had been working on algorithms used on graphs of protein-protein interactions, and I wanted to create some sort of art based on these graphs! I thought it would be cool to be able to create a graph that formed written text, but also looked like a natural graph. I also wanted to build a program that could generate a graph based on any text, not just the specific one I wanted to make (which was "THANK YOU").
+
+After quite a bit of trial and error, python magic, and alternatiing between cursing and praising [matplotlib][matplotlib], I was able to create such a program! 
+
+The image I used in my final "Thank You" poster (after some photoshop) is here:
+
+![thank you][thank-you-image]
+
+One of the coolest parts of this image is that I was able to save the nodes and edges I generated to create the image, and with the help of my fellow researching Lily Liu, was able to run the algorithms we were working on that summer on this data. I then put this output from our algorithm (which is just a bunch of numbers) as the background of the image. You can see it if you look close!
+
+
+Also, here's an image of my own name:
+
+![sam slate][sam-slate]
+
+---
+
+## Project Reflection
+
+This project was another of those: I have a cool idea and I think it would be fun to implement but I have no idea how hard it actually is. I had the python experience from the research, but had little experience with creating visuals or working with matplotlib. 
+
+The algorithms for actually creating the set of nodes and edges was much more difficult than I thought it would be. I had to create parallelogram "boxes" that I would want to emphasize with more edges, based on a dictionary of letters that I had to hardcode. I then had to go through and randomly create those edges based on the collection of boxes I had defined. 
+
+Part of this algorithm required answering the question of whether or not a line with two endpoints lied within a parallelogram, and I built a math module just to answer this question. In doing this, I implemented a higher-order-function, which was probably unnecesary but a lot of fun! (functional programming, I miss you)
+
+One of the best parts of this project is that after I had finished up the visualization I originally built it for, four months later I wanted to create another visualization with it. I expected to have to go in and debug a ton to get it working again, but I started it up and it ran correctly the first time! Not something I'm used to in the world of computer science :) 
+
+[lenore-cowen]: http://www.cs.tufts.edu/~cowen/
+[github-link]:   https://github.com/sam-slate/plot-font
+[matplotlib]: https://matplotlib.org/
+[thank-you-image]: https://github.com/sam-slate/plot-font/raw/master/examples/thank_you_after.jpeg
+[sam-slate]: https://github.com/sam-slate/plot-font/raw/master/examples/sam_slate_after2.jpg
