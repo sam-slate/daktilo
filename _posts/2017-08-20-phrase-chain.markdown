@@ -4,6 +4,7 @@ title:  "Phrase Chain Games"
 subtitle: "Games built around chains of two word phrases"
 date:   2017-08-20 23:34:01
 categories: [design, tool]
+redirect: false
 ---
 
 This project was me playing around with chains of two word phrases. There are a couple different games and puzzles built on top of a dictionary of two word phrases. 

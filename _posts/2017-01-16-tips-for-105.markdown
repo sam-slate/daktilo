@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Tips for incoming 105 students"
+subtitle: "A reflection and recomendation"
+date:   2017-01-16 23:34:01
+categories: [design, tool]
+redirect: https://medium.com/@samslate/tips-for-incoming-105-students-dae3d6e0aa38
+---

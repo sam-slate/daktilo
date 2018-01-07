@@ -4,6 +4,7 @@ title:  "Talmud Pronoun Counter"
 subtitle: ""
 date:   2016-12-18 23:34:01
 categories: [design, tool]
+redirect: false
 ---
 
 The Github repository of this project can be found [here][github-repo].

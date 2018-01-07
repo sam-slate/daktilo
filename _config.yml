@@ -25,3 +25,7 @@ exclude: ["README.md", "README.html"]
 # Build settings
 highlighter: null
 markdown: kramdown
+
+# Add plugins
+plugins:
+  - jekyll-seo-tag

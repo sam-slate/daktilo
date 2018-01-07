@@ -4,6 +4,7 @@ title:  "Pointer Simulation"
 subtitle: "To help students see and understand pointers"
 date:   2017-01-16 23:34:01
 categories: [design, tool]
+redirect: false
 ---
 
 This is a C++ Pointer Interpreter and Simulation built in the Khan Academy coding environment using JavaScript and ProcessingJS. The simulation can be found on Khan Academy [here][khan-link] and on github [here][github-link].

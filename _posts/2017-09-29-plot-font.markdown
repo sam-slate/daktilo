@@ -4,6 +4,7 @@ title:  "Plot Font"
 subtitle: "Plotting a random graph with a higher density of nodes and edges based on text given by user"
 date:   2017-09-29 23:34:01
 categories: [design, tool]
+redirect: false
 ---
 
 This project a way for me to say thank you to the wonderful Proefssor [Lenore Cowen][lenore-cowen], with whom I conducted research in Computational Biology during the Summer of 2017 and beyond. The github link to the project is [here][github-link].
