@@ -1,0 +1,44 @@
+{% assign wordcount = include.content | number_of_words %}
+
+<script type="application/ld+json">
+{  
+    "@context":"http://schema.org",
+    "@type":"BlogPosting",
+    "headline":"{{ include.headline }}",
+    "url":"https://www.samueljacobslate.com{{ include.link }}",
+    "genre":"{{ include.genre }}",
+    "wordCount":"{{ wordcount }}",
+    "datePublished":"{{ include.date | | date: '%Y-%m-%d' }}"
+    "author":{  
+      "@type":"Person",
+      "name":"Sam Slate",
+      "sameAs":[  
+        "https://github.com/sam-slate"
+      ]
+    },
+    "publisher":{  
+      "@type":"Person",
+      "name":"Sam Slate",
+      "sameAs":[  
+        "https://github.com/sam-slate",
+      ],
+      "logo": {
+      "@type": "ImageObject",
+      "contentUrl": "https://www.samueljacobslate.com/assets/images/logo.jpg",
+        "url": "https://www.samueljacobslate.com"
+      }
+    },
+    "image":{  
+      "@type":"ImageObject",
+      "contentUrl": "https://www.samueljacobslate.com/assets/images/logo.jpg",
+      "url": "https://www.samueljacobslate.com",
+      "height":"450",
+      "width":"1000"
+    },
+    "mainEntityOfPage":{  
+       "@type":"WebPage",
+       "@id":"https://www.samueljacobslate.com{{ include.link }}"
+    },
+    "articleBody":"{{ include.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
+}  
+</script>
