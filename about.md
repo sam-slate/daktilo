@@ -4,7 +4,7 @@ title: About
 subtitle: a little bit about me
 permalink: /about/
 ---
- I was born in Chicago IL, raised in [West Hartford CT](https://connecticuthistory.org/the-debate-over-who-could-occupy-world-war-ii-public-housing-in-west-hartford/), and now split my time between my family's home in Cambridge MA and the food and justice based [coop](https://www.facebook.com/TuftsCraftsHouse/) I live in on Tufts campus. 
+I was born in Chicago IL, raised in [West Hartford CT](https://connecticuthistory.org/the-debate-over-who-could-occupy-world-war-ii-public-housing-in-west-hartford/), and now split my time between my family's home in Cambridge MA and the food and justice based [coop](https://www.facebook.com/TuftsCraftsHouse/) I live in on Tufts campus. 
 
 I see my life as a mix of a lot of things, including:
 
