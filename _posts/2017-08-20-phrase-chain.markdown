@@ -9,7 +9,7 @@ redirect: false
 
 This project was me playing around with chains of two word phrases. There are a couple different games and puzzles built on top of a dictionary of two word phrases. 
 
-The github link is [here][github-link], and it includes the code and descriptions of the files and how to set them up and play!
+The GitHub link is [here][github-link], and it includes the code and descriptions of the files and how to set them up and play!
 
 ---
 

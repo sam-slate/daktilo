@@ -7,11 +7,11 @@ categories: [design, tool]
 redirect: false
 ---
 
-This project a way for me to say thank you to the wonderful Proefssor [Lenore Cowen][lenore-cowen], with whom I conducted research in Computational Biology during the Summer of 2017 and beyond. The github link to the project is [here][github-link].
+This project a way for me to say thank you to the wonderful Professor [Lenore Cowen][lenore-cowen], with whom I conducted research in Computational Biology during the Summer of 2017 and beyond. The github link to the project is [here][github-link].
 
 We had been working on algorithms used on graphs of protein-protein interactions, and I wanted to create some sort of art based on these graphs! I thought it would be cool to be able to create a graph that formed written text, but also looked like a natural graph. I also wanted to build a program that could generate a graph based on any text, not just the specific one I wanted to make (which was "THANK YOU").
 
-After quite a bit of trial and error, python magic, and alternatiing between cursing and praising [matplotlib][matplotlib], I was able to create such a program! 
+After quite a bit of trial and error, python magic, and alternating between cursing and praising [matplotlib][matplotlib], I was able to create such a program! 
 
 The image I used in my final "Thank You" poster (after some photoshop) is here:
 
@@ -32,7 +32,7 @@ This project was another of those: I have a cool idea and I think it would be fu
 
 The algorithms for actually creating the set of nodes and edges was much more difficult than I thought it would be. I had to create parallelogram "boxes" that I would want to emphasize with more edges, based on a dictionary of letters that I had to hardcode. I then had to go through and randomly create those edges based on the collection of boxes I had defined. 
 
-Part of this algorithm required answering the question of whether or not a line with two endpoints lied within a parallelogram, and I built a math module just to answer this question. In doing this, I implemented a higher-order-function, which was probably unnecesary but a lot of fun! (functional programming, I miss you)
+Part of this algorithm required answering the question of whether or not a line with two endpoints lied within a parallelogram, and I built a math module just to answer this question. In doing this, I implemented a higher-order-function, which was probably unnecessary but a lot of fun! (functional programming, I miss you)
 
 One of the best parts of this project is that after I had finished up the visualization I originally built it for, four months later I wanted to create another visualization with it. I expected to have to go in and debug a ton to get it working again, but I started it up and it ran correctly the first time! Not something I'm used to in the world of computer science :) 
 
