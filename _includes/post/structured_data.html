@@ -8,7 +8,8 @@
     "url":"https://www.samueljacobslate.com{{ include.link }}",
     "genre":"{{ include.genre }}",
     "wordCount":"{{ wordcount }}",
-    "datePublished":"{{ include.date | | date: '%Y-%m-%d' }}"
+    "datePublished":"{{ include.date | | date: '%Y-%m-%d' }}",
+    "dateModified":"{{ include.date | | date: '%Y-%m-%d' }}",
     "author":{  
       "@type":"Person",
       "name":"Sam Slate",
@@ -17,11 +18,8 @@
       ]
     },
     "publisher":{  
-      "@type":"Person",
+      "@type":"Organization",
       "name":"Sam Slate",
-      "sameAs":[  
-        "https://github.com/sam-slate",
-      ],
       "logo": {
       "@type": "ImageObject",
       "contentUrl": "https://www.samueljacobslate.com/assets/images/logo.jpg",
