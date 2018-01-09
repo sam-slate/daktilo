@@ -22,7 +22,7 @@ You can also play around with the embedded version below, although you must scro
 
 ## Project Reflection
 
-I made this project to send in with an internship application fro Khan Academy, but by the time I had finished the application was closed! I had a ton of fun making it however :) I was basically learning the Khan Academy coding environment, JavaScript, and ProcessingJS as I was going along, so parts of the code will probably look prettier than other parts.
+I made this project to send in with an internship application for Khan Academy, but by the time I had finished the application was closed! I had a ton of fun making it however :) I was basically learning the Khan Academy coding environment, JavaScript, and ProcessingJS as I was going along, so parts of the code will probably look prettier than other parts.
 
 I was motivated to make this project based on all the times I've been talking with students and felt everything would be easier if I just had an interactive visualization of pointers. I wanted the basic image of memory and I wanted the user to be able to input code. 
 
