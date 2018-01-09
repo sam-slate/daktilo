@@ -1,0 +1,153 @@
+---
+layout: post
+title:  "This Site!"
+subtitle: "Learning a thing or two about front-end and myself as a human"
+date:   2017-12-30 23:34:01
+categories: [design, tool]
+redirect: false
+---
+## Sections: [Basics](#basics) ◊ [Setup](#initialSetup) ◊ [Liquid](#liquid) ◊ [SEO](#seo) ◊ [Reflection](#reflection)
+
+
+_I had been wanting to create for myself a website for some time now, if only to gain the experience of doing it. And what an experience it has been!_
+
+---
+<a name="basics"></a>
+## The Basics
+
+
+I decided I wanted to go simple and cheap. Simple because I don’t have much front-end experience and cheap because of obvious reasons. I reached out to my good friend and former colleague [Maya Richman][maya] for suggestions and she recommended using [Jekyll][jekyll] as a simple static website generator. Jekyll was something I had used a bit of [before][library] while working for [the Engine Room][ter] with Maya, but starting from scratch with a website in Jekyll seemed terrifying (and reminded me of a certain Arthur song).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nHDmQ9Q30I0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+
+Maya recommended the [template][template] she uses for her [website][maya] (her website looks a bit similar to mine, but don’t tell anyone) and I was off! As is always the case with these types of things, setting stuff up that looks simple turns out to be much, much more complicated than I realized. I feel like a lot of people who do computer science stuff for a living are awash in the field from dawn til dusk and pick up knowledge of different technologies through osmosis. Although I do love coding, I’ve never been the type of person to live my whole life in that world, and so I miss out on a lot of this passive learning.
+
+Things I didn't know how to do but probably should because I'm a CS major:
+- How to actually buy a domain name
+- How to link that domain to Github Pages
+- How to use GitHub Pages
+- How to connect Jekyll to GitHub pages
+- How to run Jekyll to begin with
+- Many other things that I forget but also am too embaressed to describe here
+
+As usual, I learned the hard way by messing up and trucking on, and eventually, finally, I got the basics down. 
+
+---
+<a name="initialSetup"></a>
+
+## Initial Setup
+
+Someone had already taken [www.samslate.com](www.samslate.com) (other Sam Slate, if you’re out there, hit me up!), so I went the formal route and used my full name for the domain. After some googling and a [good post][redditpost] on reddit with tips, I decided to use [NameCheap](https://www.namecheap.com/) for registering the domain.
+
+Next was diving into the [daktilo template][template] by kronik3r. The template is amazing in that so much is done for you in setting up the layouts and the basic functionality. It had what I wanted: a splash page and a blog. Any attempt to personalize the site, however, required tracing my way through the file hierarchies and trying to get a grasp of the entire layout of a Jekyll site. 
+
+Again, trial and error, trial and error. I was able to change the colors eventually (yay!) and customize the links, text, and page titles. Success! Next step was to have some fun with the [contact me page][contact], which has a contact form using [Formspree](https://formspree.io/) (another new thing I learned was how to embed in Markdown through HTML). Then I polished up on my Markdown skills and wrote some blog posts on different projects, playing around more with embedding, such as in these posts [here][dayinlife] and [here][pointersimulation].
+
+---
+<a name="liquid"></a>
+## Liquid Date with my Assets
+
+One of the most interesting adventures deep into Jekyll was trying to figure out how to make blog links redirect from the [“Projects and Writing”][pandw] page to other domains other than a blog post. The key here was to put a redirect variable into the metadata of each post and check that variable in the Projects and Writing Markdown [file][pandwmarkdown] itself. Based on that variable, I either set up the link like normal or redirected to another domain.
+
+Accomplishing this though required reading up on [Liquid][liquid], the template language used in Jekyll. These types of languages are fun in that they can be super quirky (A language created by an ecommerce website? Percentage signs everywhere?  Control flow tag called “unless?”) and can do quite a bit with so little. After wrangling with pretty useless error statements and rogue percentage signs, I was able to implement the simple if statement required.
+
+
+This is the code I came up with in my Projects and Writing Markdown [file][pandwmarkdown]. The Liquid code should have no spaces before and after or brackets, but Markdown would attempt to execute the code if I didn't put the spaces in there (if someone knows how to fix this, help would be much appreciated!).
+
+Changed in [projectsandwriting.md][pandwmarkdown]:
+```liquid
+{ % for post in site.posts % }
+    { % if post.redirect % }
+    	.
+    	.	Code that links directly to redirect domain
+    	.
+
+    { % else % }
+    	.
+    	.	Code that links to a blog post like before
+    	.
+
+    { % endif % }
+{ % endfor % }
+```
+
+Added to each post Markdown file:
+```
+redirect: false
+```
+
+---
+<a name="seo"></a>
+## SEO Stands for Stay Enraged Often 
+
+My next big adventure was down the search engine optimization (SEO) rabbit hole. As anyone with a personal website knows, it’s not the easiest to get your site at the top of google search results when someone searches your name. The google algorithm is notorious for being a bit of black magic, and there’s no algorithm for getting it up there (not even yelling at your computer “It’s my site with my name on it, just put it first darn it!). 	
+
+I thus took a dive into the endless number of SEO blog posts that all really say the same thing which is nothing much of substance (have good content!). The fun part about these posts is that you can put in a search in google for SEO tips and the top result you know is doing something right and has something to teach you. The tenth page of google results for “SEO tips” is a miserable and sad sight to see. 
+
+The [Google Search Console][GSC] (the place where you manage your domain’s presence in Google) was as helpful as was  terrifying. There are all these buzz words that you know you should know, like Accelerated Mobile Pages, Structured Data, and Rich Cards. You can start to see just how little your little website actually has going for it in regards to optimization, and how people can get paid a lot of money to do all of this for you. 
+
+I got some huge help from the [Jekyll SEO plugin][jseo] and an [amazing tutorial][sdtutorial] on structured data in a Jekyll Website from Mindless Rambling Nonsense. To get structured data right, I needed to go back into the workings of Liquid, include files, and how to pass variables from file to file. Part of this journey was reuniting with my good friend [JSON][jsonld], exploring the wide world of [schema][schema], and using the frustrating but absolutely necessary Google [structured data testing tool][sdtt]. 
+
+Created new [structured_data.html][sdmarkdown] in my includes folder (based on the tutorial):
+
+```
+{ % assign wordcount = include.content | number_of_words % }
+
+<script type="application/ld+json">
+{  
+    "@context":"http://schema.org",
+    "@type":"BlogPosting",
+    "headline":"{ { include.headline } }",
+    "url":"https://www.samueljacobslate.com{ { include.link } }",
+    "genre":"{ { include.genre } }",
+    	.
+    	.
+    	.
+
+}  
+</script>
+```
+
+Added to [post.html][postmarkdown] in the layouts folder:
+```
+{ % 
+  include post/structured_data.html
+  headline=page.title
+  genre=page.categories
+  content=page.content
+  link=page.url
+  date=page.date 
+% }
+```
+
+The most frustrating part is that when you do squash the bugs and get it right, there’s no real way or knowing if any of it works! As of now, who knows!
+
+---
+<a name="reflection"></a>
+## Project Reflection
+
+I’ve never been the biggest fan of front-end (as soon as I ran into positioning in CSS a couple years back I knew it was not for me) but this project has been incredibly rewarding. The fun part about front-end is that you can see it and share immediately. The hard part is getting to a level of knowledge on all the bits and pieces to make it all work. Front-end has often felt like a mountain of things that I don’t know I don’t know, but I’ve been able to slowly chip away at that and make something I’m proud of! 
+
+
+
+[maya]: https://mayarichman.github.io/
+[jekyll]:   https://jekyllrb.com/
+[library]: https://jekyllrb.com/
+[ter]: https://www.theengineroom.org/
+[template]: https://github.com/kronik3r/daktilo
+[redditpost]: https://www.reddit.com/r/web_design/comments/3ht67e/what_is_good_place_to_buy_a_domain_name_ive_heard/
+[contact]:   http://www.samueljacobslate.com/contact
+[dayinlife]: http://www.samueljacobslate.com/design/tool/2017/12/30/day-in-the-life.html
+[pointersimulation]: http://www.samueljacobslate.com/design/tool/2017/01/16/pointer-simulation.html
+[pandw]: http://www.samueljacobslate.com/projectsandwriting
+[liquid]: http://shopify.github.io/liquid/
+[pandwmarkdown]: https://github.com/sam-slate/sam-slate.github.io/blob/master/projectsandwriting.md
+[GSC]: https://www.google.com/webmasters/tools/home?hl=en&authuser=0
+[jseo]: https://github.com/jekyll/jekyll-seo-tag
+[sdtutorial]: http://pauldambra.github.io/structured-data-with-jekyll.html
+[jsonld]: https://json-ld.org/
+[schema]: http://schema.org/
+[sdtt]: https://search.google.com/structured-data/testing-tool
+[sdmarkdown]: https://github.com/sam-slate/sam-slate.github.io/blob/master/_includes/post/structured_data.html
+[postmarkdown]: https://github.com/sam-slate/sam-slate.github.io/blob/master/_layouts/post.html
