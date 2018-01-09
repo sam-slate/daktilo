@@ -3,7 +3,7 @@ layout: post
 title:  "This Site!"
 subtitle: "Learning a thing or two about front-end and myself as a human"
 date:   2017-12-30 23:34:01
-categories: [design, tool]
+categories: [coding]
 redirect: false
 ---
 ## Sections: [Basics](#basics) ◊ [Setup](#initialSetup) ◊ [Liquid](#liquid) ◊ [SEO](#seo) ◊ [Reflection](#reflection)

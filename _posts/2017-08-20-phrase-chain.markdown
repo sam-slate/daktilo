@@ -3,7 +3,7 @@ layout: post
 title:  "Phrase Chain Games"
 subtitle: "Games built around chains of two word phrases"
 date:   2017-08-20 23:34:01
-categories: [design, tool]
+categories: [python, coding]
 redirect: false
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "My Summer as a Computational Biology Research Assistant"
 subtitle: "Finding patterns in data and finding truth within myself"
 date:   2017-10-09 23:34:01
-categories: [design, tool]
+categories: [research, coding]
 redirect: false
 ---
 
@@ -39,7 +39,7 @@ A picture of our poster is below:
 
 I had an amazing time working with Professor Cowen and the group. As a whole, they created a wonderful and supportive learning environment. I felt inspired by the work that we accomplished and excited about the future of the field.
 
-I came in with little biology experience, little python experience, and little experience with a person saying "here's a problem, try to solve it." Although overwhelming at times, my work always felt fulfilling and I could tell I was learning a ton. It was amazing to look around at the end of the summer and realize Lily and I had accomplished something pretty significant with our findings. We had written 30 different scripts a piece, had combed through massive data files, had (many) moments of defeat and (fewer) moments of victory, had to rewrite much of our code at different points, and by the end had something tangible that we had accomplished.
+I came in with little biology experience, little python experience, and little experience with a person saying "here's a problem, try to solve it." Although overwhelming at times, my work always felt fulfilling and I could tell I was learning a ton. It was amazing to look around at the end of the summer and realize Lily and I had accomplished something pretty significant with our findings. We had written 30 different scripts apiece, had combed through massive data files, had (many) moments of defeat and (fewer) moments of victory, had to rewrite much of our code at different points, and by the end had something tangible that we had accomplished.
 
 Pretty neat. 
 

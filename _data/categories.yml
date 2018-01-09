@@ -1,8 +1,23 @@
-- slug: design
-  name: Design
+- slug: disability
+  name: Disability
 
-- slug: tools
-  name: Tools
+- slug: depression
+  name: Depression
 
-- slug: productivity
-  name: Productivity
+- slug: writing
+  name: Writing
+
+- slug: research
+  name: Research
+
+- slug: coding
+  name: Coding Projects
+
+- slug: python
+  name: Python
+
+- slug: c++
+  name: C++
+
+- slug: visualization
+  name: Visualization

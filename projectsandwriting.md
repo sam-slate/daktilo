@@ -6,6 +6,14 @@ sitemap:
   priority: 0.9
 ---
 
+# Categories:
+<ul class="categories">
+    {% for category in site.data.categories %}
+            <li class="categories__item"><a href="{{ '/categories/' | append: category.slug | prepend: site.baseurl }}">{{ category.name }}</a></li>
+    {% endfor %}
+</ul>
+
+---
 
 <ul class="list-posts">
     {% for post in site.posts %}

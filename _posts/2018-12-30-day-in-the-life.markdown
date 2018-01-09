@@ -3,7 +3,7 @@ layout: post
 title:  "Day in the Life: A Disability Game"
 subtitle: "A text-based, choose-your-own-adventure game describing a day in in the life of someone with a physical disability. "
 date:   2017-12-30 23:34:01
-categories: [design, tool]
+categories: [coding, disability, c++]
 redirect: false
 ---
 Press the play button below and type input in the black box!

@@ -3,7 +3,7 @@ layout: post
 title:  "Plot Font"
 subtitle: "Plotting a random graph with a higher density of nodes and edges based on text given by user"
 date:   2017-09-29 23:34:01
-categories: [design, tool]
+categories: [visualization, python, coding, research]
 redirect: false
 ---
 

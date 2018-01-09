@@ -16,11 +16,11 @@ a {
 }
 
 a:link {
-    color: #99ff33;
+    color: $link;
 }
 
 a:visited {
-    color: #99ff33;
+    color: $link;
 }
 
 p {
@@ -216,13 +216,13 @@ strong {
 }
 
 .categories__item a {
-    color: $iron;
+    color: $link;
 }
 
 .categories__item:after {
     content: "/";
     margin-left: 6px;
-    color: $cloudy;
+    color: $link;
 }
 
 .categories__item:last-child:after {
