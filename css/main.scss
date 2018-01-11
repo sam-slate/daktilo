@@ -5,11 +5,19 @@ sitemap:
 ---
 @charset "utf-8";
 
-/* =Colors */
+/* =Colors 
 $dorian: #4d0099;
 $iron:  #ffffff;
 $cloudy: #cccccc;
-$link: #99ff33;
+$link: #99ff33; */
+
+/* =Easy Colors */
+$dorian: #e8e8e8;
+$iron:  #000000;
+$cloudy: #666363;
+$link: #2d86af;
+
+
 
 @import
     "mixins",

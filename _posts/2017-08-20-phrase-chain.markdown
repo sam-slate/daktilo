@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: phrase-chain
 title:  "Phrase Chain Games"
 subtitle: "Games built around chains of two word phrases"
 date:   2017-08-20 23:34:01

@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: cb-research
 title:  "My Summer as a Computational Biology Research Assistant"
 subtitle: "Finding patterns in data and finding truth within myself"
 date:   2017-10-09 23:34:01
@@ -43,7 +44,7 @@ I came in with little biology experience, little python experience, and little e
 
 Pretty neat. 
 
-(Also, as a thank you to the amazing Professor Cowen, I created a poster for her. The details can be found in this post [here][plot-font]). 
+(Also, as a thank you to the amazing Professor Cowen, I created a poster for her. The details can be found in this post [here]({{ site.baseurl }}{% post_url 2017-09-29-plot-font %}). 
 
 
 [lenore]: http://www.cs.tufts.edu/~cowen/
@@ -52,4 +53,5 @@ Pretty neat.
 [bcb-pic]: http://bcb.cs.tufts.edu/images/IMG_2132.JPG
 [github-repo]:   https://github.com/sam-slate/dsd-phenotype-ranking-example-code
 [poster]: https://raw.githubusercontent.com/sam-slate/dsd-phenotype-ranking-example-code/master/FinalPoster.jpg
-[plot-font]: http://www.samueljacobslate.com/design/tool/2017/09/29/plot-font.html
+
+

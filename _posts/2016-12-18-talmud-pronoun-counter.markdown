@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: talmud-pronoun-counter
 title:  "Talmud Pronoun Counter"
 subtitle: ""
 date:   2016-12-18 23:34:01

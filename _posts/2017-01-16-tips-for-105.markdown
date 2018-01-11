@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: tips-105
 title:  "Tips for incoming 105 students"
 subtitle: "A reflection and recomendation"
 date:   2017-01-16 23:34:01

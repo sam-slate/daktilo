@@ -1,5 +1,6 @@
 ---
 layout: post
+permalinke: plot-font
 title:  "Plot Font"
 subtitle: "Plotting a random graph with a higher density of nodes and edges based on text given by user"
 date:   2017-09-29 23:34:01

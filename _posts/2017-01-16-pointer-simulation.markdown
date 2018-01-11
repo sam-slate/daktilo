@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: pointer-simulation
 title:  "Pointer Simulation"
 subtitle: "To help students see and understand pointers"
 date:   2017-01-16 23:34:01
