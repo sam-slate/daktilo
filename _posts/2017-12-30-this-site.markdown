@@ -30,7 +30,7 @@ Things I didn't know how to do but probably should because I'm a CS major:
 - How to use GitHub Pages
 - How to connect Jekyll to GitHub pages
 - How to run Jekyll to begin with
-- Many other things that I forget but also am too embaressed to describe here
+- Many other things that I forget but also am too embarrassed to describe here
 
 As usual, I learned the hard way by messing up and trucking on, and eventually, finally, I got the basics down. 
 

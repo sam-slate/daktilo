@@ -20,7 +20,7 @@ Some results:
 
 ## Project Reflection
 
-This project was one of my first learning experiences with scripting in python and using APIs. The Sefaria API was particularly difficult to rangle and I'm glad I was able to work it all out! It was also fun to create an excel spreadsheet as an output. A short and sweet program that led me to bigger and better things in python :)
+This project was one of my first learning experiences with scripting in python and using APIs. The Sefaria API was particularly difficult to wrangle and I'm glad I was able to work it all out! It was also fun to create an excel spreadsheet as an output. A short and sweet program that led me to bigger and better things in python :)
 
 
 [talmud]: https://www.myjewishlearning.com/article/talmud-101/
