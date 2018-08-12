@@ -23,7 +23,7 @@ Here we all are:
 
 My main project for the summer was to try to find an answer to the question: if we have a bunch of proteins we know are associated with a certain attribute, how can we best predict which other proteins are most likely to be associated with that attribute given a web of interactions between proteins? In other words, we know a bunch of proteins that are "guilty" and we know which other proteins they interact with and which proteins those proteins interact with (and so on). How do we then make a list of which proteins are most likely to be "guilty" as well?
 
-The simple answer would be to say: "in our web of protein interactions, just pick the proteins that are the closest to the known ones!" This method is pretty accurate for this kind of problem, but we were wondering if there were other methods that took into account more subtle information about the web of interactions and was more accurate in its predictions. 
+The simple answer would be to say: "in our web of protein interactions, just pick the proteins that are the closest to the known ones!" This method is pretty accurate for this kind of problem, but we were wondering if there were other methods that took into account more subtle information about the web of interactions and were more accurate in their predictions. 
 
 For those who are into the technical or scientific side of this project, a more in depth explanation can be found on a GitHub repository for the project [here][github-repo].
 
@@ -44,7 +44,7 @@ I came in with little biology experience, little python experience, and little e
 
 Pretty neat. 
 
-(Also, as a thank you to the amazing Professor Cowen, I created a poster for her. The details can be found in this post [here]({{ site.baseurl }}{% post_url 2017-09-29-plot-font %}). 
+(Also, as a thank you to the amazing Professor Cowen, I created a poster for her. The details can be found in this post [here]({{ site.baseurl }}{% post_url 2017-09-29-plot-font %})). 
 
 
 [lenore]: http://www.cs.tufts.edu/~cowen/
