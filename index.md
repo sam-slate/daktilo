@@ -25,4 +25,4 @@ sitemap:
  }
 </script>
 
-My name is Sam Slate and I am a student, coder, organizer, and believer in people and our power to create change. You can check out my [bio](/about) and my [projects and writing](/projectsandwriting) on this site, or you can [contact me](/contact).
+My name is Sam Slate and I am a coder, teacher, organizer, and believer in people and our power to create change. You can check out my [bio](/about), my [projects and writing](/projectsandwriting), and my [resume](/resume) on this site, or you can [contact me](/contact).
