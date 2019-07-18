@@ -4,7 +4,7 @@ title: About
 subtitle: a little bit about me
 permalink: /about/
 ---
-I was born in Chicago IL, raised in [West Hartford CT](https://connecticuthistory.org/the-debate-over-who-could-occupy-world-war-ii-public-housing-in-west-hartford/), and now live a bit too close to my alma matter in Somerville, MA. I am currently an associate software engineer at [Carbon Black](https://carbonblack.com).
+I was born in Chicago IL, raised in [West Hartford CT](https://connecticuthistory.org/the-debate-over-who-could-occupy-world-war-ii-public-housing-in-west-hartford/), and now live a bit too close to my alma matter in Cambridge, MA.
 
 I see my life as a mix of a lot of things, including:
 
