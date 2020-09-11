@@ -47,8 +47,6 @@ function single_dose_func(x, initial_dose, time_taken, half_life, absorption_tim
     multiplier_helper = Math.pow((1/2), (24/half_life))
     multiplier = ((1 - multiplier_helper)/absorption_time) * (x - time_taken) + multiplier_helper
     func_result *= multiplier
-    /* func_result *= (((1/2) / absorption_time) * (x - time_taken) + .5) */;
-    //return 5
   }
   return func_result
 }
@@ -192,15 +190,6 @@ function draw_board() {
         })
        }
     }
-/* 
-    board.create('point', [12, med_func(12)], {
-      name: 'Noon',
-      size: 3
-    })
-    board.create('point', [24, med_func(24)], {
-      name: 'Midnight',
-      size: 3
-  }) */
   }
 }
 
